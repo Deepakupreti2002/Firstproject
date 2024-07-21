@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import authService from '../appwrite/auth'
 import { login } from '../store/authslice'
+import {Logo,Input,Button} from './index'
+import { Link } from 'react-router-dom'
 
 function Signup() {
     const navigate = useNavigate()
@@ -74,12 +76,14 @@ function Signup() {
                         />
                         <Button type="submit" className="w-full">
                             Create Account
+                        
                         </Button>
                     </div>
                 </form>
             </div>
 
     </div>
+    
   )
 }
 

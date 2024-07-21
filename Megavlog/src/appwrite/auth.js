@@ -28,7 +28,7 @@ async login({email,password}){
     try {
       return  await this.account.createEmailPasswordSession(email,password)
     } catch (error) {
-        
+        console.log("Appwrite service :: createaccount :: error",error);
     }
         
 }
